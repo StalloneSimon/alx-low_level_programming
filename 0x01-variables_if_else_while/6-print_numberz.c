@@ -14,6 +14,6 @@ int main(void)
 	for (baseten = 0; baseten < 10; baseten++)
 		putchar((baseten % 10) + '0');
 
-		putchar('\n');
+	putchar('\n');
 	return (0);
 }
