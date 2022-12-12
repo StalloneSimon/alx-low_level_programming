@@ -17,22 +17,23 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if ((n % 10) > 5)
+	int modulous_n = n % 10;
+
+	if (modulous_n > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n",
-			n, n % 10);
+			n, modulous_n);
 	}
-
-	if ((n % 10) == 0)
+	if (modulous_n == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n",
-			n, n % 10);
+			n, modulous_n);
+	}
+	if (modulous_n < 6 && modulous_n != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n",
+			n, modulous_n);
 	}
 
-	if ((n % 10) <= 5 && (n % 10) != 0)
-	{
-		printf("Last digit of %d is %d and not 0\n",
-			n, n % 10);
-	}
 	return (0);
 }
