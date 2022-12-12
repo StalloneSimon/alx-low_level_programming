@@ -3,7 +3,7 @@
 /**
  * main  - Prints the sicw of type bases in computer
  *
- * Return 0;
+ * Return: Always 0.
  */
 int main(void)
 {
