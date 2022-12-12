@@ -17,7 +17,9 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int modulous_n = n % 10;
+	int modulous_n;
+
+	modulous_n = n % 10;
 
 	if (modulous_n > 5)
 	{
