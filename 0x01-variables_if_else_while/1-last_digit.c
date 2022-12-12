@@ -12,12 +12,12 @@
 int main(void)
 {
 	int n;
+	int modulous_n;
 
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int modulous_n;
 
 	modulous_n = n % 10;
 
