@@ -15,7 +15,7 @@ int main(void)
 	for (base_ten = 0; base_ten < 10; base_ten++)
 		printf("%d", base_ten);
 
-		printf("\n");
+	printf("\n");
 
 	return (0);
 }
