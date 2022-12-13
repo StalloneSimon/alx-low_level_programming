@@ -15,21 +15,19 @@ int main(void)
 	for (no1 = 0; no1 < 9; no1++)
 	{
 		no2 = no1 + 1;
-			
-		do{
 
+		do {
 			putchar(no1 + '0');
 			putchar(no2 + '0');
 
-			if (no2 < 10)
+			if (no1 < 8 && no2 < 10)
 			{
 
 				putchar(',');
-				putchar(' ');
+				putchar(32);
 			}
 			no2++;
-		}
-		while (no2 < 10);
+		} while (no2 < 10);
 	}
 	putchar('\n');
 
