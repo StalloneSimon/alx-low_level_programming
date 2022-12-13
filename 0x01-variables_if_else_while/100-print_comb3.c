@@ -21,11 +21,11 @@ int main(void)
 			putchar(no1 + '0');
 			putchar(no2 + '0');
 
-			if (no2 < 8)
+			if (no2 < 10)
 			{
 
 				putchar(',');
-				putchar(32);
+				putchar(' ');
 			}
 			no2++;
 		}
