@@ -20,7 +20,7 @@ void times_table(void)
 
 			mult = no1 * no2;
 
-			if (mult <= ()
+			if (mult <= 9)
 				_putchar(' ');
 			else
 				_putchar((mult / 10) + '0');
