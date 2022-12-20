@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * print_rev - reverses order of a string
- * @s: the string to be reversed and printed
- * i is the index
- */
+ *  * print_rev - a function that prints a string, in reverse
+ *   * fcounter is to first count to end, n is to count back
+ *    * @s: str input
+ *     * Return: string in reverse
+ *      */
 void print_rev(char *s)
 {
-	int i;
-	int rev;
+	int fcounter = 0;
+	int i, n;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (rev = ('\0' - i - 1); rev >= 0; rev--)
-		{
-			_putchar(s[rev]);
-		}
+		fcounter++;
+	}
 
+	for (n = (fcounter - 1); n >= 0; n--)
+	{
+		_putchar(s[n]);
 	}
 	_putchar('\n');
-
 }
