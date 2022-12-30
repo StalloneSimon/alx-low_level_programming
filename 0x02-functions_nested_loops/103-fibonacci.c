@@ -6,27 +6,23 @@
  */
 int main(void)
 {
-	unsigned long no1, no2, no3, no4;
+	unsigned long no1, no2, no3, no4, no5;
 
-	no1 = 0;
+	no1 = no5 = 0;
 	no2 = 1;
 
-	for (no3 = 1; no3 <= 32; no3++)
+	for (no3 = 0; no3 <= 33; no3++)
 	{
 		no4 = no1 + no2;
 		no1 = no2;
 		no2 = no4;
 
-		if (no4 % 2 ==0)
+		if (no4 % 2 == 0 && no4 < 4000000)
 		{
-		printf("%ld", no4);
-
-			if (no3 < 32)
-			{
-				printf(", ");
-			}
+			no5 += no4;
 		}
+
 	}
-	printf("\n");
+	printf("%ld\n", no5);
 	return (0);
 }
