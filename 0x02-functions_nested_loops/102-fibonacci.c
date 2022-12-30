@@ -19,7 +19,12 @@ int main(void)
 		no2 = no4;
 
 
-		printf("%ld, ", no4);
+		printf("%ld", no4);
+
+		if (no3 < 50)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
