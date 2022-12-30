@@ -14,7 +14,7 @@ int main(void)
 	no1 = 0;
 	no2 = 1;
 	
-	for (no3 = 1; no3 <= 50; no3++)
+	for (no3 = 1; no3 <= count; no3++)
 	{
 		no4 = no1 + no2;
 		no1 = no2;
