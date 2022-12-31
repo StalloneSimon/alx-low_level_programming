@@ -18,7 +18,10 @@ int main(void)
 		fib3 = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = fib3;
+
+		if (count <= 98)
 		printf("%lu", fib3);
+		if (count < 98)
 			printf(", ");
 	}
 	printf("\n");
