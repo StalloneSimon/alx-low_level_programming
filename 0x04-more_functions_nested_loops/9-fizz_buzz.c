@@ -14,7 +14,7 @@ int main (void)
 
 	for (no1 = 1; no1 <= 100; no1++)
 	{
-		if (no1 % 3 ==0 && no1 % 5 == 0)
+		if (no1 % 3 == 0 && no1 % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
@@ -25,7 +25,7 @@ int main (void)
 		else if (no1 % 5 == 0)
 		{
 			printf("Buzz");
-		}else
+		} else
 		{
 			printf("%d", no1);
 		}
