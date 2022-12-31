@@ -10,9 +10,7 @@ int main(void)
 {
 	unsigned long int fib1 = 0, fib2 = 1, fib3, num, count;
 
-	printf("Enter the value of num \n");
 	scanf("%lu", &num);
-	printf("First %lu FIBONACCI numbers are ...\n", num);
 
 	for (count = 1; count <= num; count++)
 	{
