@@ -5,18 +5,20 @@
  *
  * Return: void
  */
-void more_numbers(void)
+more_numbers(void)
 {
-	int rows;
-	int noS;
+	int i, ro;
 
-	for (rows = 0; rows < 10; rows++)
+	for (ro = 0; ro < 10; ro++)
 	{
-		for (noS = 0; noS <= 14; noS++)
+		for (i = 0; i <= 14; i++)
 		{
-			_putchar((noS / 10) + '0');
+			if (i >= 10)
+			{
+				_putchar((i / 10) + '0');
+			}
+			_putchar((i % 10) + '0');
 		}
-		_putchar((noS % 10) + '0');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
