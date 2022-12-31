@@ -5,22 +5,22 @@
  *
  * Return: void
  */
-more_numbers(void)
+void more_numbers(void)
 {
-	int i, j;
+	int no1, no2;
 
-	i = j = 0;
-	while (i < 10)
+	no1 = no2 = 0;
+	while (no1 < 10)
 	{
-		while (j <= 14)
+		while (no2 <= 14)
 		{
-			if (j >= 10)
-				_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-			++j;
+			if (no2 >= 10)
+				_putchar(no2 / 10 + '0');
+			_putchar(no2 % 10 + '0');
+			++no2;
 		}
 		_putchar('\n');
-		j = 0;
-		i++;
+		no2 = 0;
+		no1++;
 	}
 }
