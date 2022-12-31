@@ -8,12 +8,13 @@
 
 int main(void)
 {
-	unsigned long int fib1 = 0, fib2 = 1, fib3, num, count;
+	unsigned long int fib1 = 0, fib2 = 1, fib3, num, count = 0;
 
 	scanf("%lu", &num);
 
-	for (count = 1; count <= num; count++)
+	while (count < num)
 	{
+		count++;
 		fib3 = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = fib3;
