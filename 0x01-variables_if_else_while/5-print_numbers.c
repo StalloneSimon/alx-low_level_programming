@@ -6,15 +6,11 @@
  */
 int main(void)
 {
-	char alp;
+	int numbers;
 
-	for (alp = 'a'; alp <= 'z'; alp++)
+	for (numbers = 0; numbers < 10; numbers++)
 	{
-		putchar(alp);
-	}
-	for (alp = 'A'; alp <= 'Z'; alp++)
-	{
-		putchar(alp);
+		printf("%d", numbers);
 	}
 	putchar('\n');
 	return (0);

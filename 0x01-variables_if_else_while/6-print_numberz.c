@@ -6,15 +6,11 @@
  */
 int main(void)
 {
-	char alp;
+	int numz;
 
-	for (alp = 'a'; alp <= 'z'; alp++)
+	for (numz = '0'; numz <= '9'; numz++)
 	{
-		putchar(alp);
-	}
-	for (alp = 'A'; alp <= 'Z'; alp++)
-	{
-		putchar(alp);
+		putchar(numz);
 	}
 	putchar('\n');
 	return (0);
