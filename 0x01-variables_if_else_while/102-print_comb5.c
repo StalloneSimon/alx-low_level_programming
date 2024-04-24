@@ -6,20 +6,34 @@
  */
 int main(void)
 {
-	int nums;
-	int nums1;
+	int i;
+	int j;
+	int k;
+	int m;
 
-	for (nums = '0'; nums <= '9'; nums++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (nums1 = '0'; nums1 <= '9'; nums1++)
+		for (j = 0; j <= 9; j++)
 		{
-			putchar(nums);
-			putchar(nums1);
-			
-			if (nums == '9' && nums1 == '9')
-				continue;
-			putchar(',');
-			putchar(' ');
+			for (k = 0; k <= 9; k++)
+			{
+				for (m = 0; m <= 9; m++)
+				{
+				if ((k > i) || (k == i && m > j))
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(' ');
+					putchar(k + '0');
+					putchar(m + '0');
+					if (!(i == 9 && j == 8 && k == 9 && m == 9))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					}
+				}
+			}
 		}
 	}
 	putchar('\n');
