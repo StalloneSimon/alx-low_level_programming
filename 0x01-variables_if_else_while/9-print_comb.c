@@ -11,8 +11,8 @@ int main(void)
 	for (nums = '0'; nums <= '9'; nums++)
 	{
 		putchar(nums);
-		
-	
+
+
 		if (nums == '9')
 		{
 			continue;
