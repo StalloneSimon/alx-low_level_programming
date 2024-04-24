@@ -1,41 +1,34 @@
-#include"main.h"
-
+#include <stdio.h>
 /**
- * numLength - returns the length of string
+ * main - check the code for Holberton School students.
  *
- * @num: operand number
- *
- * Return: number of digits
-*/
-
-int numLength(int num)
-{
-	int length = 0;
-
-	if (!num)
-		return (1);
-
-	while (num)
-	{
-		num = num / 10;
-		length += 1;
-	}
-
-	return (length);
-}
-
-/**
- * main - Entry point
- *
- * Description: prints the first 98 Fibonacci numbers
- *	starting with 1 and 2 followed by a new line
- *
- *	Solution was copied from Nobert Patrick
- *	Wise, github handle: Trikcode
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int count, initial0s;
+	int i;
+	double sum_ant = 1;
+	double sum_new = 2;
+	double new = 2;
+
+	printf("%lf, %lf, ", sum_ant, sum_new);
+	for (i = 0; i <= 95; i++)
+	{
+		if (new > 1000000000)
+		{
+			new = sum_ant / 1000000000 + sum_new / 1000000000;
+		}
+		else
+			new = sum_ant + sum_new;
+			
+		if (i < 95)
+		{
+		printf("%lf, ", new);
+		}
+		else
+			printf("%lf\n", new);
+		sum_ant = sum_new;
+		sum_new = new;
+	}
+	return (0);
+}
